@@ -1,3 +1,5 @@
+package lesson1;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -5,7 +7,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-@WebServlet(name = "FirstServlet", urlPatterns = "/first_servlet")
+@WebServlet(name = "lesson1.FirstServlet", urlPatterns = "/first_servlet")
 public class FirstServlet implements Servlet {
     private transient ServletConfig config;
     private static Logger logger = LoggerFactory.getLogger(FirstServlet.class);
@@ -29,7 +31,7 @@ public class FirstServlet implements Servlet {
 
     @Override
     public String getServletInfo() {
-        return "FirstServlet";
+        return "lesson1.FirstServlet";
     }
 
     @Override

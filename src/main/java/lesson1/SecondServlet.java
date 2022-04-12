@@ -1,3 +1,5 @@
+package lesson1;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "SecondServlet", urlPatterns = "/second_servlet")
+@WebServlet(name = "lesson1.SecondServlet", urlPatterns = "/second_servlet")
 public class SecondServlet extends HttpServlet {
     private static Logger logger = LoggerFactory.getLogger(SecondServlet.class);
 
